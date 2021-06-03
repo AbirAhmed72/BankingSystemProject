@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CFCFCD;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BankingSystem.Transaction">
+   <top>
+      <ImageView fitHeight="110.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Images/electronic-funds-transfer (2).jpg" />
+         </image>
+      </ImageView>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="289.0" prefWidth="600.0" style="-fx-background-color: CFCFCD;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="244.0" layoutY="14.0" text="Transaction" textFill="#0c3363">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-2.0" layoutY="46.0" prefHeight="3.0" prefWidth="600.0" />
+            <Label layoutX="160.0" layoutY="61.0" opacity="0.61" text="Enter the amount you want to transact">
+               <font>
+                  <Font name="Candara" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount" alignment="CENTER" layoutX="223.0" layoutY="94.0" opacity="0.85" prefHeight="49.0" prefWidth="149.0" promptText="Tk.">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Button fx:id="withdrawMoney" layoutX="372.0" layoutY="232.0" mnemonicParsing="false" onAction="#withdrawMoney" prefHeight="39.0" prefWidth="129.0" text="Withdraw Money" textFill="#09aa16">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="sendMoney" layoutX="98.0" layoutY="232.0" mnemonicParsing="false" onAction="#sendMoney" prefHeight="39.0" prefWidth="123.0" text="Send Money" textFill="#0c3363">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="phone" layoutX="83.0" layoutY="189.0" prefHeight="25.0" prefWidth="154.0" promptText="To your desired phone no." />
+            <TextField fx:id="ATM" layoutX="357.0" layoutY="189.0" prefHeight="25.0" prefWidth="154.0" promptText="Enter nearby ATM code" />
+            <Label layoutX="287.0" layoutY="222.0" opacity="0.8" text="OR">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="successText" alignment="CENTER" layoutX="224.0" layoutY="151.0" prefHeight="11.0" prefWidth="147.0" textFill="#09aa16">
+               <font>
+                  <Font name="Candara" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorText" alignment="CENTER" layoutX="224.0" layoutY="170.0" prefHeight="11.0" prefWidth="147.0" textFill="RED">
+               <font>
+                  <Font name="Candara" size="8.0" />
+               </font>
+            </Label>
+            <Button fx:id="toAfterLogin" layoutX="272.0" layoutY="252.0" mnemonicParsing="false" onAction="#toAfterLogin" style="-fx-background-color: #09aa16;" text="DONE!" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
